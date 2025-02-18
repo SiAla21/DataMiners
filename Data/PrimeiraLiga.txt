@@ -1,0 +1,20 @@
+ata
+id	club	season	matches_played	wins	draws	losses	goals_scored	goals_conceded	goal_difference	points	top_scorer	clean_sheets	possession (%)	pass_accuracy (%)	shots_per_match	fouls_committed	yellow_cards	red_cards	total_injuries	recruited_players	total_attacks_left	total_attacks_middle	total_attacks_right	conceded_attacks_left	conceded_attacks_middle	conceded_attacks_right
+1	Benfica	2022-23	34	28	3	3	82	20	+62	87	Gonçalo Ramos (19)	18	61.5	88.2	16.3	320	45	1	12	5	140	250	170	70	90	80
+2	Porto	2022-23	34	27	4	3	73	22	+51	85	Mehdi Taremi (22)	17	60.8	87.5	15.8	330	50	2	14	4	135	240	165	75	95	85
+3	Braga	2022-23	34	25	5	4	75	30	+45	80	Simon Banza (15)	15	58.7	86.2	15.2	340	55	3	16	5	130	230	160	70	90	80
+4	Sporting CP	2022-23	34	23	5	6	71	32	+39	74	Viktor Gyökeres (18)	14	59.2	85.7	14.8	350	58	3	17	5	135	240	165	80	100	90
+5	Vitória de Guimarães	2022-23	34	18	8	8	55	38	+17	62	André Silva (12)	11	53.4	83.9	13.5	330	50	2	14	4	120	220	150	70	90	80
+6	Arouca	2022-23	34	15	9	10	45	40	+5	54	Rafa Mújica (10)	9	50.2	81.8	12.0	310	45	1	12	4	100	180	130	65	85	75
+7	Chaves	2022-23	34	12	10	12	40	45	-5	46	Héctor Hernández (8)	7	48.9	79.8	11.7	300	40	1	11	3	85	160	115	55	70	65
+8	Famalicão	2022-23	34	13	5	16	39	50	-11	44	Iván Jaime (7)	6	49.5	80.2	11.3	310	45	1	12	4	90	170	120	60	75	70
+9	Boavista	2022-23	34	12	8	14	43	54	-11	44	Yusupha Njie (9)	6	48.7	79.5	11.5	300	40	1	11	3	85	160	115	55	70	65
+10	Vizela	2022-23	34	11	10	13	40	50	-10	43	Samu (7)	6	48.3	79.4	11.0	310	45	1	12	4	85	160	115	55	70	65
+11	Casa Pia	2022-23	34	11	8	15	38	49	-11	41	Saviour Godwin (6)	6	47.5	79.6	11.2	300	40	1	11	3	80	150	100	50	65	60
+12	Estoril	2022-23	34	11	5	18	37	54	-17	38	André Franco (6)	5	46.7	77.9	10.5	290	38	1	10	2	70	130	90	45	60	55
+13	Portimonense	2022-23	34	10	8	16	35	52	-17	38	Rildo (6)	5	46.2	76.5	10.3	280	35	1	9	2	65	120	85	40	55	50
+14	Gil Vicente	2022-23	34	10	7	17	39	57	-18	37	Fran Navarro (8)	5	47.1	78.9	11.1	290	38	1	10	2	70	130	90	45	60	55
+15	Marítimo	2022-23	34	7	10	17	32	59	-27	31	Clésio (5)	4	44.8	76.5	10.0	270	33	1	8	2	60	110	80	35	50	45
+16	Paços de Ferreira	2022-23	34	6	8	20	29	65	-36	26	Uilton (5)	3	43.9	75.6	9.8	260	30	1	7	2	55	100	75	30	45	40
+17	Santa Clara	2022-23	34	5	10	19	28	63	-35	25	Rui Costa (5)	3	44.5	76.2	10.0	250	28	1	6	1	50	90	70	25	40	35
+18	Rio Ave	2022-23	34	4	12	18	26	68	-42	24	André Pereira (4)	2	42.5	74.8	9.2	240	25	1	5	1	45	80	65	20	35	30

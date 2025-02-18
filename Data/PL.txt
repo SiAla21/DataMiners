@@ -1,0 +1,23 @@
+Sample Dataset for Premier League (2022-23 Season)
+id	club	season	matches_played	wins	draws	losses	goals_scored	goals_conceded	goal_difference	points	top_scorer	clean_sheets	possession (%)	pass_accuracy (%)	shots_per_match	fouls_committed	yellow_cards	red_cards	total_injuries	recruited_players	total_attacks_left	total_attacks_middle	total_attacks_right	conceded_attacks_left	conceded_attacks_middle	conceded_attacks_right
+1	Manchester City	2022-23	38	28	5	5	94	33	+61	89	Erling Haaland (36)	19	64.5	89.2	16.8	320	45	1	10	5	120	200	150	80	100	90
+2	Arsenal	2022-23	38	26	6	6	88	43	+45	84	Martin Ødegaard (15)	14	58.3	85.7	15.2	340	50	2	15	4	110	220	140	85	95	85
+3	Manchester United	2022-23	38	23	6	9	58	43	+15	75	Marcus Rashford (17)	17	53.2	83.5	13.4	347	63	3	25	5	115	210	145	75	105	95
+4	Newcastle United	2022-23	38	19	14	5	68	33	+35	71	Callum Wilson (18)	15	52.8	82.4	12.9	330	55	2	20	6	105	190	135	70	90	80
+5	Liverpool	2022-23	38	19	10	9	75	47	+28	67	Mohamed Salah (19)	12	57.6	84.3	14.7	310	48	1	18	3	125	230	155	85	100	90
+6	Brighton	2022-23	38	18	8	12	72	53	+19	62	Alexis Mac Allister (10)	12	58.1	84.5	13.8	335	52	1	14	4	110	210	140	80	95	85
+7	Aston Villa	2022-23	38	18	7	13	51	46	+5	61	Ollie Watkins (15)	13	50.2	81.3	12.5	345	58	2	16	5	105	195	130	75	90	80
+8	Tottenham Hotspur	2022-23	38	18	6	14	70	63	+7	60	Harry Kane (30)	10	54.7	83.2	14.1	360	60	3	20	3	115	220	145	85	100	90
+9	Brentford	2022-23	38	15	14	9	58	46	+12	59	Ivan Toney (20)	11	49.8	80.6	12.3	325	55	2	12	4	100	185	125	70	85	75
+10	Fulham	2022-23	38	15	7	16	55	53	+2	52	Aleksandar Mitrović (14)	10	48.5	79.8	11.9	340	50	1	15	5	95	175	120	65	80	70
+11	Crystal Palace	2022-23	38	11	12	15	40	49	-9	45	Eberechi Eze (10)	9	47.3	78.4	11.2	330	48	2	18	3	90	170	115	60	75	65
+12	Chelsea	2022-23	38	11	11	16	38	47	-9	44	Kai Havertz (7)	8	55.6	84.1	12.8	350	60	3	22	6	105	200	135	75	90	80
+13	Wolverhampton	2022-23	38	11	8	19	31	58	-27	41	Daniel Podence (6)	7	46.8	77.5	10.8	320	45	1	14	4	85	160	110	55	70	60
+14	West Ham United	2022-23	38	11	7	20	42	55	-13	40	Michail Antonio (9)	8	48.2	79.1	11.5	335	50	2	16	5	90	175	120	65	80	70
+15	Bournemouth	2022-23	38	11	6	21	37	71	-34	39	Dominic Solanke (6)	6	45.7	76.8	10.5	310	40	1	12	3	80	150	100	50	65	55
+16	Nottingham Forest	2022-23	38	9	11	18	38	68	-30	38	Taiwo Awoniyi (10)	6	44.5	75.2	10.1	315	55	2	15	12	75	140	95	60	70	65
+17	Everton	2022-23	38	8	12	18	34	57	-23	36	Dwight McNeil (7)	7	43.8	74.6	9.8	330	60	3	18	5	70	130	90	55	65	60
+18	Leicester City	2022-23	38	9	7	22	51	68	-17	34	James Maddison (10)	5	49.1	78.3	11.4	340	65	4	20	6	80	150	100	65	75	70
+19	Leeds United	2022-23	38	7	10	21	48	78	-30	31	Rodrigo (13)	4	47.6	77.8	11.0	325	50	2	16	4	85	160	105	70	80	75
+20	Southampton	2022-23	38	6	7	25	36	73	-37	25	James Ward-Prowse (9)	3	46.2	76.5	10.3	310	45	1	14	3	65	120	85	50	60	55
+

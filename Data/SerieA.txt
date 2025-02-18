@@ -1,0 +1,22 @@
+
+id	club	season	matches_played	wins	draws	losses	goals_scored	goals_conceded	goal_difference	points	top_scorer	clean_sheets	possession (%)	pass_accuracy (%)	shots_per_match	fouls_committed	yellow_cards	red_cards	total_injuries	recruited_players	total_attacks_left	total_attacks_middle	total_attacks_right	conceded_attacks_left	conceded_attacks_middle	conceded_attacks_right
+1	Napoli	2022-23	38	28	6	4	77	28	+49	90	Victor Osimhen (26)	18	56.7	86.3	15.2	340	50	1	12	5	130	240	160	70	90	80
+2	Lazio	2022-23	38	22	8	8	60	30	+30	74	Ciro Immobile (12)	21	53.4	84.7	13.8	330	48	2	14	4	120	220	150	75	95	85
+3	Inter Milan	2022-23	38	23	3	12	71	42	+29	72	Lautaro Martínez (21)	14	55.8	85.2	14.5	350	55	3	16	5	125	230	155	80	100	90
+4	AC Milan	2022-23	38	20	10	8	64	43	+21	70	Olivier Giroud (13)	12	54.2	84.1	13.9	340	52	2	15	4	115	210	145	75	95	85
+5	Atalanta	2022-23	38	19	7	12	66	48	+18	64	Ademola Lookman (13)	11	52.8	83.5	13.4	330	50	1	14	4	110	200	140	70	90	80
+6	AS Roma	2022-23	38	18	9	11	50	38	+12	63	Paulo Dybala (12)	15	51.6	82.9	12.8	320	48	2	13	4	105	190	135	65	85	75
+7	Juventus	2022-23	38	22	6	10	56	33	+23	62	Dušan Vlahović (10)	16	53.1	84.0	13.2	340	55	3	17	5	120	220	150	75	95	85
+8	Fiorentina	2022-23	38	15	11	12	53	43	+10	56	Arthur Cabral (7)	10	52.3	83.1	12.7	330	50	2	14	4	100	180	130	70	90	80
+9	Bologna	2022-23	38	14	12	12	53	49	+4	54	Marko Arnautović (10)	9	50.8	81.9	12.3	320	48	1	13	4	95	170	125	65	85	75
+10	Torino	2022-23	38	14	11	13	42	41	+1	53	Antonio Sanabria (8)	11	49.5	80.6	11.8	310	45	1	12	3	90	160	120	60	80	70
+11	Monza	2022-23	38	14	10	14	48	52	-4	52	Gianluca Caprari (7)	8	48.9	79.8	11.7	310	45	1	12	4	85	160	115	55	70	65
+12	Udinese	2022-23	38	11	13	14	47	48	-1	46	Beto (10)	9	49.2	80.1	11.5	320	50	2	14	4	90	170	120	60	75	70
+13	Sassuolo	2022-23	38	12	9	17	47	61	-14	45	Domenico Berardi (11)	7	51.3	82.4	12.1	330	55	3	15	5	95	180	125	65	80	75
+14	Empoli	2022-23	38	10	13	15	37	49	-12	43	Tommaso Baldanzi (6)	8	48.5	79.3	11.0	310	45	1	12	3	80	150	100	55	70	65
+15	Salernitana	2022-23	38	9	15	14	48	62	-14	42	Boulaye Dia (16)	6	47.8	78.6	10.8	300	40	1	11	3	75	140	95	50	65	60
+16	Lecce	2022-23	38	8	12	18	33	46	-13	36	Gabriel Strefezza (8)	7	46.7	77.9	10.5	290	38	1	10	2	70	130	90	45	60	55
+17	Spezia	2022-23	38	6	13	19	31	62	-31	31	M'Bala Nzola (13)	5	45.2	76.8	10.2	280	35	1	9	2	65	120	85	40	55	50
+18	Hellas Verona	2022-23	38	7	10	21	31	59	-28	31	Cyril Ngonge (5)	6	44.8	76.5	10.0	270	33	1	8	2	60	110	80	35	50	45
+19	Cremonese	2022-23	38	5	12	21	36	69	-33	27	Cyriel Dessers (7)	4	43.9	75.6	9.8	260	30	1	7	2	55	100	75	30	45	40
+20	Sampdoria	2022-23	38	3	10	25	24	71	-47	19	Manolo Gabbiadini (4)	3	42.5	74.8	9.2	250	28	1	6	1	50	90	70	25	40	35
