@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@coreui/coreui": "^5.0.2",
+    "requests": "^0.3.0"
+  }
+}

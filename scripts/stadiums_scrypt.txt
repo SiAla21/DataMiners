@@ -1,0 +1,83 @@
+import os
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+from urllib.parse import urlparse, unquote
+
+# Define the URL of the Guardian gallery page
+url = "https://www.theguardian.com/sport/gallery/2023/oct/07/the-worlds-largest-stadiums-in-pictures"
+
+# Fetch the HTML content of the page
+response = requests.get(url)
+if response.status_code != 200:
+    print(f"Failed to fetch the page. Status code: {response.status_code}")
+    exit()
+
+html_content = response.content
+
+# Parse the HTML content using BeautifulSoup
+soup = BeautifulSoup(html_content, 'html.parser')
+
+# Create a directory to save the images (if it doesn't exist)
+if not os.path.exists('stadiums3'):
+    os.makedirs('stadiums3')
+
+# Initialize lists to store image details
+image_urls = []
+descriptions = []
+source_links = []
+image_paths = []
+
+# Find all list items containing gallery images
+for li in soup.find_all('li', class_='gallery__item'):
+    # Get the image URL
+    img = li.find('img')
+    if img and img.get('src'):
+        img_url = img['src']
+        
+        # Remove query parameters from the image URL
+        img_url_clean = urlparse(img_url).path  # Extract the path part of the URL
+        img_url_clean = unquote(img_url_clean)  # Decode URL-encoded characters
+        img_name = os.path.basename(img_url_clean)  # Extract the filename
+        
+        # Get the description (from the <h2> and <div class="gallery__caption">)
+        caption = li.find('div', class_='gallery__caption')
+        if caption:
+            description = caption.get_text(strip=True)
+        else:
+            description = 'No description'
+        
+        # Get the source link (from the <a> tag inside the gallery__fullscreen-container)
+        source = li.find('a', class_='js-gallerythumbs')
+        if source and source.get('href'):
+            source_link = source['href']
+        else:
+            source_link = 'No source link'
+        
+        # Download and save the image
+        img_path = os.path.join('stadiums3', img_name)
+        try:
+            img_data = requests.get(img_url).content
+            with open(img_path, 'wb') as img_file:
+                img_file.write(img_data)
+            
+            # Only add metadata if the image is successfully downloaded
+            image_urls.append(img_url)
+            descriptions.append(description)
+            source_links.append(source_link)
+            image_paths.append(img_path)
+        except Exception as e:
+            print(f"Error downloading {img_url}: {e}")
+
+# Create a DataFrame to store the details
+data = pd.DataFrame({
+    'Image URL': image_urls,
+    'Description': descriptions,
+    'Source Link': source_links,
+    'Image Path': image_paths
+})
+
+# Save the DataFrame to a CSV file
+data.to_csv('stadiums3.csv', index=False)
+
+print("Scraping completed. Data saved to stadiums3.csv")
