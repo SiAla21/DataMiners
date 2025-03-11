@@ -1,0 +1,19 @@
+id,club,season,matches_played,wins,draws,losses,goals_scored,goals_conceded,goal_difference,points,top_scorer,clean_sheets,possession (%),pass_accuracy (%),shots_per_match,fouls_committed,yellow_cards,red_cards,total_injuries,recruited_players,total_attacks_left,total_attacks_middle,total_attacks_right,conceded_attacks_left,conceded_attacks_middle,conceded_attacks_right
+1,Feyenoord,2022-23,34,25,7,2,81,30,51,82,Santiago Giménez (15),16,60.5,87.3,16.2,330,48,1,13,5,140,250,170,70,90,80
+2,PSV Eindhoven,2022-23,34,23,6,5,89,40,49,75,Xavi Simons (19),14,59.8,86.5,15.8,340,50,2,14,4,135,240,165,75,95,85
+3,Ajax,2022-23,34,20,9,5,86,38,48,69,Dusan Tadić (14),12,62.3,88.7,17.1,350,55,3,16,5,145,260,175,80,100,90
+4,AZ Alkmaar,2022-23,34,20,8,6,68,35,33,68,Vangelis Pavlidis (16),13,57.4,85.2,14.5,340,52,2,15,4,130,230,160,70,90,80
+5,FC Twente,2022-23,34,18,10,6,66,37,29,64,Ricky van Wolfswinkel (16),11,55.8,84.1,13.9,330,50,1,14,4,125,220,155,75,95,85
+6,Sparta Rotterdam,2022-23,34,17,8,9,60,37,23,59,Tobias Lauritsen (12),10,52.3,83.1,13.5,320,48,2,13,4,120,210,150,70,90,80
+7,FC Utrecht,2022-23,34,15,9,10,55,41,14,54,Anastasios Douvikas (12),9,53.7,84.0,13.2,310,45,1,12,4,110,200,140,65,85,75
+8,SC Heerenveen,2022-23,34,12,10,12,44,50,-6,46,Sydney van Hooijdonk (10),7,50.8,81.9,12.3,300,40,1,11,3,95,170,125,60,80,70
+9,RKC Waalwijk,2022-23,34,11,8,15,50,64,-14,41,Michiel Kramer (9),6,48.9,79.8,11.7,290,38,1,10,2,85,160,115,55,70,65
+10,Vitesse,2022-23,34,10,10,14,45,50,-5,40,Lois Openda (12),6,49.5,80.2,11.3,310,45,1,12,4,90,170,120,60,75,70
+11,Go Ahead Eagles,2022-23,34,10,8,16,46,56,-10,38,Willum Þór Willumsson (8),5,47.5,79.6,11.2,290,38,1,10,2,80,150,100,50,65,60
+12,NEC Nijmegen,2022-23,34,8,15,11,42,45,-3,39,Magnus Mattsson (7),6,48.3,79.4,11.0,300,40,1,11,3,85,160,115,55,70,65
+13,Fortuna Sittard,2022-23,34,10,6,18,39,62,-23,36,Burak Yılmaz (8),5,46.7,77.9,10.5,280,35,1,9,2,70,130,90,45,60,55
+14,FC Volendam,2022-23,34,10,6,18,42,71,-29,36,Robert Mühren (10),4,46.2,76.5,10.3,270,33,1,8,2,65,120,85,40,55,50
+15,FC Emmen,2022-23,34,6,10,18,33,65,-32,28,Richairo Živković (6),3,44.8,76.5,10.0,260,30,1,7,2,60,110,80,35,50,45
+16,SC Cambuur,2022-23,34,5,11,18,26,68,-42,26,Mitchel Paulissen (4),2,43.9,75.6,9.8,250,28,1,6,1,55,100,75,30,45,40
+17,FC Groningen,2022-23,34,4,6,24,31,75,-44,18,Ricardo Pepi (7),2,42.5,74.8,9.2,240,25,1,5,1,50,90,70,25,40,35
+18,Excelsior,2022-23,34,3,8,23,28,76,-48,17,Reda Kharchouch (5),1,41.2,73.5,8.8,230,22,1,4,1,45,80,65,20,35,30
