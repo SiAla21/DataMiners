@@ -1,0 +1,54 @@
+<div class="full-page">
+  <!-- 🔝 Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="nav-link">Settings & Privacy</span>
+      <span class="nav-link">Help</span>
+      <span class="nav-link">Posts & Activity</span>
+      <span class="nav-link">Job Posting Account</span>
+    </div>
+    <div class="nav-center">
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+    <div class="nav-right">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-envelope"></i>
+      <img src="assets/logo.jpg" alt="User" class="nav-avatar" />
+    </div>
+  </nav>
+
+  <!-- 🧱 Layout with sidebar + content -->
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="assets/images.jpeg" class="avatar" />
+      <h3>carles garcia</h3>
+      <button class="btn">Jobs</button>
+      <button class="btn">Clubs</button>
+      <button class="btn white">Blogs</button>
+    </aside>
+
+    <!-- Main content -->
+    <main class="content">
+      <app-blog-form [userId]="currentUserId"></app-blog-form>
+
+      <hr />
+
+      <!-- Posts list -->
+      <div class="post" *ngFor="let post of posts">
+        <div class="post-header">
+          <strong>{{ post.author }}</strong>
+          <span class="post-date">{{ post.date | date:'short' }}</span>
+        </div>
+        <div class="post-content">
+          <img *ngIf="post.imagePath" [src]="post.imagePath" alt="post image" />
+          <p>{{ post.description }}</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

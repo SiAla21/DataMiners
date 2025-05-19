@@ -1,0 +1,138 @@
+<nav class="navbar">
+  <div class="nav-left">
+    <span class="nav-link">Settings & Privacy</span>
+    <span class="nav-link">Help</span>
+    <span class="nav-link">Posts & Activity</span>
+    <span class="nav-link">Job Posting Account</span>
+  </div>
+
+  <div class="nav-center">
+    <div class="search-bar">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search" />
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-envelope"></i>
+    <img src="assets/logo.jpg" alt="User" class="nav-avatar" />
+  </div>
+</nav>
+
+<div class="page-layout">
+  <!-- Sidebar Gauche -->
+  <aside class="sidebar left">
+    <div class="mini-profile">
+      <img src="assets/ronaldo.jpg" alt="Ronaldo" />
+      <div>
+        <p><strong>Shay S.</strong></p>
+        <small>Pro Soccer Player</small>
+      </div>
+    </div>
+
+    <ul class="menu">
+      <li>🏠 Home</li>
+      <li>📝 Posts</li>
+      <li>📊 Stats</li>
+    </ul>
+
+    <div class="stats-box">
+      <h4>Profile Views</h4>
+      <p>1,234</p>
+      <h4>Connections</h4>
+      <p>500+</p>
+    </div>
+  </aside>
+
+  <!-- Contenu Principal -->
+  <main class="main-content">
+    <!-- En-tête avec vague -->
+    <section class="header-area">
+      <div class="profile-header">
+        <img src="assets/ronaldo.jpg" alt="Ronaldo" class="profile-img" />
+        <div class="profile-title">
+          <h1>
+            Shay Simons
+            <img *ngIf="isVerified" src="assets/verified-badge.jpeg" alt="Verified Badge" class="verified-badge" />
+          </h1>
+          <button (click)="startCapture()">📷 Start Capture</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carte Webcam -->
+    <section *ngIf="showWebcam" class="glass-card">
+      <h3>🎥 Webcam Verification</h3>
+      <webcam [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam>
+      <p>Captured: {{ capturedPaths.length }} / 3</p>
+
+      <button (click)="takeSnapshot()" [disabled]="capturedPaths.length >= 3">📸 Capture</button>
+      <button class="cancel" (click)="cancel()"> Cancel</button>
+
+      <div *ngIf="capturedPaths.length > 0">
+        <h4>🖼️ Captured Images</h4>
+        <ul>
+          <li *ngFor="let path of capturedPaths">{{ path }}</li>
+        </ul>
+        <button (click)="deleteCapturedImages()" style="color: red;">🗑️ Delete Captured Images</button>
+      </div>
+
+      <div *ngIf="rawOutput">
+        <h4> Raw Output</h4>
+        <pre>{{ rawOutput }}</pre>
+      </div>
+
+      <div *ngIf="score !== null" class="verification-result">
+        <p>Your identity score is: <strong>{{ score }}</strong></p>
+        <p *ngIf="score >= 60" style="color: green;">✅ Successfully verified!</p>
+        <p *ngIf="score < 60" style="color: red;">Verification failed. Try again.</p>
+      </div>
+    </section>
+
+    <!-- Cartes d'information -->
+    <section class="glass-card">
+      <h3>📘 About</h3>
+      <p>Shay Simons is one of the greatest football players of all time...</p>
+    </section>
+
+    <section class="glass-card">
+      <h3>💪 Top Skills</h3>
+      <ul>
+        <li><strong> Finishing</strong> – Clinical with both feet and head</li>
+        <li><strong>️ Speed</strong> – One of the fastest players</li>
+        <li><strong> Power</strong> – Aerial duel dominance</li>
+        <li><strong>Intelligence</strong> – Tactical genius</li>
+      </ul>
+    </section>
+
+    <section class="glass-card">
+      <h3>🛠️ Services</h3>
+      <ul>
+        <li>⚽ Football Training</li>
+        <li>🎤 Motivational Workshops</li>
+        <li>🛍️ Merch & Collectibles</li>
+        <li>🖊️ Autographed items</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Sidebar Droite -->
+  <aside class="sidebar right">
+    <div class="notifications">
+      <h4>🔔 Notifications</h4>
+      <ul>
+        <li>New message from Manager</li>
+        <li>Job offer: Football Coach</li>
+        <li>Event: Charity Match</li>
+      </ul>
+    </div>
+
+    <div class="promo-box">
+      <h4>🚀 Boost Your Profile</h4>
+      <p>Upgrade to Premium for exclusive insights!</p>
+      <button class="btn-primary">Upgrade</button>
+    </div>
+  </aside>
+</div>

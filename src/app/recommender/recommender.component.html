@@ -1,0 +1,97 @@
+<nav class="navbar">
+  <div class="nav-left">
+    <span class="nav-link">Settings & Privacy</span>
+    <span class="nav-link">Help</span>
+    <span class="nav-link">Posts & Activity</span>
+    <span class="nav-link">Job Posting Account</span>
+  </div>
+
+  <div class="nav-center">
+    <div class="search-bar">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search" />
+    </div>
+  </div>
+
+  <div class="nav-right">
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-envelope"></i>
+    <img src="assets/logo.jpg" alt="User" class="nav-avatar" />
+  </div>
+</nav>
+
+<div class="linkedin-layout">
+  <!-- 🔹 Left Sidebar -->
+  <aside class="sidebar-left">
+    <div class="profile-summary">
+      <img src="../../assets/juventus.jpg" class="avatar" alt="Profil" />
+      <h4>Juventus Club </h4>
+      <p class="subtext"><i class="fas fa-home"></i> Home</p>
+      <p class="subtext"><i class="fas fa-user-friends"></i> My Network</p>
+      <p class="subtext"><i class="fas fa-briefcase"></i> Jobs</p>
+    </div>
+
+    <!-- ✅ Juventus Stats Component Here -->
+    <app-club></app-club>
+  </aside>
+
+  <!-- 🔹 Main Content -->
+  <main class="main-content">
+    <div class="post-box">
+      <textarea [(ngModel)]="postText" placeholder="Describe what you want here ..."></textarea>
+      <button (click)="getRecommendation()">Get recommendations</button>
+    </div>
+
+    <div *ngIf="results.length > 0" class="card-grid">
+      <div *ngFor="let item of results" class="player-card">
+        <h3>
+          <a [routerLink]="['/profile', item.name]" class="player-link">{{ item.name }}</a>
+        </h3>
+
+        <!-- 🔁 Player View -->
+        <ng-container *ngIf="llmProfile === 'player'">
+          <p>🏴‍☠️ <strong>Club :</strong> {{ item.club || item.team_name }}</p>
+          <p>🏆 <strong>Ligue :</strong> {{ item.league }}</p>
+          <p>🎯 <strong>Position :</strong> {{ item.registered_position }}</p>
+          <p>📊 <strong>Score :</strong> {{ item.similarity_score | number:'1.2-2' }}</p>
+        </ng-container>
+
+        <!-- 🧠 Coach View -->
+        <ng-container *ngIf="llmProfile === 'coach'">
+          <p>🏴‍☠️ <strong>Club :</strong> {{ item.club }}</p>
+          <p>🏆 <strong>Âge :</strong> {{ item.age }}</p>
+          <p>🎯 <strong>Formation :</strong> {{ item.preffered_formation }}</p>
+          <p>📜 <strong>Licence :</strong> {{ item.coaching_licence }}</p>
+          <p>⚽️ <strong>Style :</strong> {{ item.style }}</p>
+          <p>📊 <strong>Score :</strong> {{ item.similarity_score | number:'1.2-2' }}</p>
+        </ng-container>
+
+        <!-- 🩺 Doctor View -->
+        <ng-container *ngIf="llmProfile === 'doctor'">
+          <p>👤 <strong>Prénom :</strong> {{ item.Rndrng_Prvdr_First_Name }}</p>
+          <p>👥 <strong>Nom :</strong> {{ item.Rndrng_Prvdr_Last_Org_Name }}</p>
+          <p>🏥 <strong>Type :</strong> {{ item.Rndrng_Prvdr_Type }}</p>
+          <p>📊 <strong>Score :</strong> {{ item.similarity_score | number:'1.2-2' }}</p>
+        </ng-container>
+
+        <a href="#" class="profile-link" (click)="$event.preventDefault()">Voir profil</a>
+      </div>
+    </div>
+
+    <div *ngIf="results.length === 0 && tried" class="no-result">
+      <p>Aucun résultat trouvé. Essaie une autre description !</p>
+    </div>
+  </main>
+
+  <!-- 🔹 Right Sidebar -->
+  <aside class="sidebar-right">
+    <h4>📈 Dernières tendances</h4>
+    <ul>
+      <li>Real Madrid recherche un <strong>gardien</strong> 🔍</li>
+      <li>Ajax FC a recruté <strong>2 défenseurs</strong> 🛡️</li>
+      <li>FC Bayern analyse des <strong>attaquants rapides</strong> ⚡</li>
+      <li>Manchester United vise des <strong>joueurs &lt; 24 ans</strong> 🧒</li>
+    </ul>
+  </aside>
+</div>

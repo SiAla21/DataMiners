@@ -1,0 +1,63 @@
+<button class="btn me-3" (click)="showStatsModal()"
+        style="background-color:#0C4626; color:white; border:none;">
+  📊 Show Stats
+</button>
+
+<button class="btn" (click)="showWeakestModal()"
+        style="background-color:#0C4626; color:white; border:none;">
+  ⚠️ Show Weakest Positions
+</button>
+
+<!-- 📊 STATS Modal -->
+<div class="modal fade" id="clubStatsModal" tabindex="-1" aria-labelledby="clubStatsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">📊 Juventus Club Stats</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div *ngIf="error" class="alert alert-danger text-center">{{ error }}</div>
+        <div *ngIf="!error && clubStats.club">
+          <div class="card p-4 shadow-sm">
+            <div class="d-flex align-items-center mb-4">
+              <div>
+                <h3>{{ clubStats.club }}</h3>
+                <small class="text-muted">Football Club Profile</small>
+              </div>
+            </div>
+            <h5>📊 Club Stats</h5>
+            <div class="stats-grid">
+              <div *ngFor="let key of statKeys()" class="stat-box">
+                <strong>{{ key }}</strong><br />
+                <span>{{ clubStats[key] }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ⚠️ Weakest Modal -->
+<div class="modal fade" id="weakestModal" tabindex="-1" aria-labelledby="weakestModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">⚠️ Top 5 Weakest Positions</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div *ngIf="error" class="alert alert-danger text-center">{{ error }}</div>
+        <div *ngIf="showWeakest && result.length > 0">
+          <ul class="list-group">
+            <li *ngFor="let pos of result" class="list-group-item">
+              🔹 {{ pos }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

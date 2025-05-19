@@ -1,0 +1,337 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f3f4f8;
+}
+
+.linkedin-layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar-right {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 250px;
+  font-size: 14px;
+}
+
+.sidebar-right h4 {
+  color: #0f3d2e;
+  margin-bottom: 10px;
+}
+
+.sidebar-right ul {
+  padding-left: 15px;
+  list-style-type: disc;
+}
+
+.sidebar-right li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+.player-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.2s ease;
+  border-left: 6px solid #0077b5;
+}
+
+.player-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 119, 181, 0.2);
+}
+
+.player-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.player-link {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.player-link:hover {
+  text-decoration: underline;
+  color: #005f91;
+}
+
+
+
+
+.main-content {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.subtext {
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.post-box textarea,
+.post-box input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.post-box button {
+  width: 100%;
+  background-color: #0C4626
+;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.llm-box,
+.results-box {
+  margin-top: 20px;
+}
+
+.results-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-box th,
+.results-box td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.sidebar-right ul {
+  padding-left: 20px;
+}
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6f9fb;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+  height: 80px;
+}
+
+.nav-left .nav-link {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif; /* ← Ajout ici */
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-left .nav-link:hover {
+  text-decoration: underline;
+}
+.nav-link {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #eef3f8;
+  border-radius: 40px;
+  padding: 5px 5px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  margin-left: 8px;
+  outline: none;
+}
+
+.nav-right i {
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+.nav-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  object-fit: cover;
+}
+.nav-center .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #eef3f8;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 500px;
+  height: 45px;
+}
+
+.search-bar i {
+  color: #777;
+  margin-right: 8px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.nav-right i {
+  font-size: 18px;
+  margin-left: 20px;
+  color: #555;
+  cursor: pointer;
+}
+
+.nav-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f2ef;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 280px;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.sidebar, .main, .extra {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.sidebar img.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+
+
+textarea, input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  background-color: #0a66c2;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004182;
+}
+
+.results-table table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.results-table th, .results-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+.profile-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #0073b1; /* Bleu LinkedIn */
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.profile-link:hover {
+  text-decoration: none;
+}
+.sidebar-left app-club .card {
+  max-width: 100%;
+  font-size: 13px;
+}
+
+.sidebar-left app-club button {
+  width: 100%;
+}
+

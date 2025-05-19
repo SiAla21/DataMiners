@@ -1,0 +1,46 @@
+<div class="player-profile-container">
+  <!-- Banner Header (tu peux le remettre ici si nécessaire) -->
+
+  <!-- Blog Post Form -->
+  <div class="form-card">
+    <div class="form-header">
+      <h2 class="title"> Blog Post</h2>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="form" enctype="multipart/form-data" class="form-body">
+      <label for="file">Image:</label>
+      <input id="file" type="file" (change)="onFileChange($event)" />
+
+      <label for="description">Description:</label>
+      <input id="description" formControlName="description" type="text" />
+
+      <button type="submit" [disabled]="form.invalid || !selectedFile">Publier</button>
+    </form>
+
+    <div class="result" *ngIf="uploadResult">
+      <p>{{ uploadResult }}</p>
+    </div>
+
+    <div class="prediction" *ngIf="predictedCategory">
+      <p><strong>Catégorie prédite :</strong> {{ predictedCategory }}</p>
+    </div>
+
+  </div>
+  <div class="form-card">
+    <div class="form-header">
+      <h2 class="title">  <img src="assets/ronaldo.jpg" class="avatar" />
+        Shay Simons</h2>
+    </div>
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="form" enctype="multipart/form-data" class="form-body">
+
+      <img src="assets/foot.png" class="avatar-r"
+           style="width: 550px; height: 300px;  display: block; margin: 0 auto 20px;" />
+      <label for="description">A weathered football, suspended mid-flight in the heart of the net, against a canvas of golden sunlight and endless sky. This moment captures more than just a goal — it symbolizes triumph, passion, and the timeless beauty of the game.
+        Whether on dusty streets or grand stadiums, every kick carries a dream. 🌤️🏆 </label>
+
+    </form>
+
+
+  </div>
+</div>

@@ -1,0 +1,315 @@
+.full-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔝 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E5EDE8;
+  padding: 15px 30px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-left, .nav-center, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+}
+
+/* 🧱 Layout under navbar */
+.layout {
+  display: flex;
+  padding: 30px;
+  background: #f4f6f9;
+}
+
+/* 🟪 Sidebar */
+.sidebar {
+  width: 250px;
+  background: #f0f4f9;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar h3 {
+  margin: 10px 0;
+}
+
+.btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #1F3327;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn.white {
+  background: #ffffff;
+  color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
+/* 🟨 Content */
+.content {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E5EDE8;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+  height: 80px;
+}
+
+.nav-left .nav-link {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif; /* ← Ajout ici */
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-left .nav-link:hover {
+  text-decoration: underline;
+}
+.nav-link {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* 🔝 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f4f9;
+  padding: 15px 30px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-left, .nav-center, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-bar {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #eef3f8;
+  border-radius: 40px;
+  padding: 5px 5px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  margin-left: 8px;
+  outline: none;
+}
+
+.nav-right i {
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+}
+
+.nav-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  object-fit: cover;
+}
+.nav-center .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #eef3f8;
+  border-radius: 25px;
+  padding: 5px 10px;
+  width: 500px;
+  height: 45px;
+}
+
+.search-bar i {
+  color: #777;
+  margin-right: 8px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.nav-right i {
+  font-size: 18px;
+  margin-left: 20px;
+  color: #555;
+  cursor: pointer;
+}
+
+.nav-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f2ef;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 280px;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.sidebar, .main, .extra {
+  background-color: #E5EDE8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.sidebar img.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+
+
+textarea, input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  background-color: #0a66c2;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004182;
+}
