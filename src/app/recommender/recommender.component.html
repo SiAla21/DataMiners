@@ -1,0 +1,46 @@
+<h2>Recommandation intelligente</h2>
+
+<textarea [(ngModel)]="postText" rows="4" placeholder="Décris les besoins du club..."></textarea><br>
+<input [(ngModel)]="clubName" placeholder="Nom du club" /><br>
+<button (click)="getRecommendation()">Obtenir les recommandations</button>
+
+<hr>
+
+<div *ngIf="results.length > 0">
+  <h3>Résultats :</h3>
+  <table border="1" cellpadding="6">
+    <thead>
+    <tr>
+      <th *ngFor="let key of resultKeys">{{ key }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of results">
+      <td *ngFor="let key of resultKeys">{{ item[key] }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div *ngIf="llmProfile">
+  <h3>🧠 Résultat LLM :</h3>
+  <p><strong>Profil détecté :</strong> {{ llmProfile }}</p>
+  <p><strong>Conditions extraites :</strong></p>
+  <ul>
+    <li *ngFor="let cond of llmConditions">
+      {{ cond[0] }} {{ cond[1] }} {{ cond[2] }}
+    </li>
+  </ul>
+</div>
+<div *ngIf="results.length > 0">
+  <p><strong>Profil détecté :</strong> {{ profile }}</p>
+  <p><strong>Conditions extraites :</strong></p>
+  <ul>
+    <li *ngFor="let cond of conditions">
+      {{ cond[0] }} {{ cond[1] }} {{ cond[2] }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="results.length === 0 && tried">
+  <p>Aucun résultat trouvé. Essaie une autre description !</p>
+</div>

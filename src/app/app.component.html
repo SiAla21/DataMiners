@@ -1,0 +1,35 @@
+
+<app-recommender>
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <h1>Hello, mon-projet-angular</h1>
+      <p>Bienvenue dans ton application Angular. 🎉</p>
+      <textarea [(ngModel)]="postText" rows="5" placeholder="Décris les besoins du club"></textarea>
+      <input [(ngModel)]="clubName" placeholder="Nom du club" />
+      <button (click)="getRecommendation()">Obtenir les recommandations</button>
+    </div>
+
+    <div class="right-side">
+      <div class="pill-group">
+        <a class="pill" href="https://angular.dev" target="_blank" rel="noopener">
+          Explore the Docs
+        </a>
+        <a class="pill" href="https://angular.dev/tutorials" target="_blank" rel="noopener">
+          Learn with Tutorials
+        </a>
+        <a class="pill" href="https://angular.dev/tools/cli" target="_blank" rel="noopener">
+          CLI Docs
+        </a>
+        <a class="pill" href="https://angular.dev/tools/language-service" target="_blank" rel="noopener">
+          Angular Language Service
+        </a>
+        <a class="pill" href="https://angular.dev/tools/devtools" target="_blank" rel="noopener">
+          Angular DevTools
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+</app-recommender>
