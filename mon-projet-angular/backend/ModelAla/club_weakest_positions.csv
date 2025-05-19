@@ -1,0 +1,117 @@
+club,Weakest_1,Weakest_2,Weakest_3,Weakest_4,Weakest_5
+Bayern Munich,GK,Medical Staff,Coach,DMF,CM
+Borussia Dortmund,Coach,GK,Medical Staff,CM,DMF
+RB Leipzig,Coach,GK,Medical Staff,CM,ST
+Union Berlin,CM,Medical Staff,ST,Coach,GK
+SC Freiburg,ST,Coach,GK,Medical Staff,AMF
+Bayer Leverkusen,GK,Coach,Medical Staff,ST,CM
+Eintracht Frankfurt,GK,Coach,ST,CM,AMF
+Wolfsburg,GK,Coach,CM,Medical Staff,ST
+Mainz 05,GK,AMF,Medical Staff,ST,Coach
+Borussia Mönchengladbach,Medical Staff,GK,ST,AMF,Coach
+FC Köln,AMF,ST,Medical Staff,CM,GK
+Hoffenheim,ST,AMF,GK,Coach,CM
+Werder Bremen,AMF,CM,Medical Staff,ST,RW
+VfL Bochum,AMF,ST,LW,RW,CM
+Augsburg,ST,AMF,CM,RW,DMF
+Stuttgart,AMF,ST,GK,CM,RW
+Schalke 04,AMF,ST,LW,RW,CM
+Hertha Berlin,LW,RW,AMF,Medical Staff,ST
+Feyenoord,GK,Coach,Medical Staff,DMF,CM
+PSV Eindhoven,Coach,GK,Medical Staff,CM,DMF
+Ajax,GK,Coach,Medical Staff,CM,DMF
+AZ Alkmaar,GK,Coach,Medical Staff,CM,DMF
+FC Twente,GK,Coach,Medical Staff,CM,ST
+Sparta Rotterdam,GK,Medical Staff,Coach,CM,ST
+FC Utrecht,GK,Medical Staff,Coach,ST,AMF
+SC Heerenveen,ST,Medical Staff,AMF,GK,Coach
+RKC Waalwijk,Medical Staff,AMF,CM,ST,Coach
+Vitesse,AMF,ST,GK,Medical Staff,CM
+Go Ahead Eagles,Medical Staff,AMF,LW,ST,RW
+NEC Nijmegen,AMF,ST,GK,Medical Staff,CM
+Fortuna Sittard,AMF,ST,LW,Medical Staff,RW
+FC Volendam,LW,Medical Staff,RW,AMF,ST
+FC Emmen,LW,ST,AMF,Medical Staff,RW
+SC Cambuur,ST,AMF,LW,Medical Staff,RW
+FC Groningen,LW,Medical Staff,RW,CB,RB
+Excelsior,CB,RB,LB,RW,LW
+Barcelona,Medical Staff,Coach,GK,DMF,ST
+Real Madrid,Coach,GK,Medical Staff,DMF,CM
+Atlético Madrid,GK,Coach,CM,AMF,DMF
+Real Sociedad,ST,GK,Coach,AMF,Medical Staff
+Villarreal,GK,Coach,CM,ST,AMF
+Real Betis,ST,AMF,GK,Coach,CM
+Osasuna,ST,AMF,GK,Medical Staff,CM
+Athletic Bilbao,ST,AMF,GK,CM,Coach
+Mallorca,ST,AMF,GK,CM,Medical Staff
+Girona,Medical Staff,CM,RW,DMF,AMF
+Rayo Vallecano,AMF,ST,CM,Medical Staff,RW
+Sevilla,AMF,ST,CM,GK,RW
+Celta Vigo,ST,AMF,GK,CM,Coach
+Cádiz,ST,AMF,LW,CM,RW
+Getafe,ST,AMF,CM,LW,GK
+Valencia,ST,AMF,GK,CM,RW
+Almería,AMF,CM,ST,RW,DMF
+Valladolid,ST,AMF,LW,RW,CM
+Espanyol,AMF,CM,ST,RW,DMF
+Elche,ST,AMF,LW,RW,CM
+Paris Saint-Germain,Coach,GK,Medical Staff,LB,RB
+Lens,GK,Medical Staff,Coach,CM,ST
+Marseille,GK,Coach,Medical Staff,ST,AMF
+Rennes,GK,Coach,Medical Staff,AMF,ST
+Lille,GK,Coach,Medical Staff,ST,AMF
+Monaco,Coach,GK,Medical Staff,CM,AMF
+Lyon,GK,Coach,ST,Medical Staff,AMF
+Clermont Foot,ST,AMF,CM,Medical Staff,GK
+Nice,ST,GK,AMF,Medical Staff,Coach
+Lorient,Medical Staff,ST,AMF,GK,CM
+Reims,ST,AMF,GK,Medical Staff,CM
+Montpellier,CM,Coach,Medical Staff,GK,AMF
+Toulouse,CM,AMF,Medical Staff,ST,GK
+Brest,AMF,ST,CM,Medical Staff,DMF
+Strasbourg,AMF,CM,Medical Staff,ST,GK
+Nantes,ST,AMF,LW,CM,RW
+Auxerre,CM,AMF,ST,LW,RW
+Ajaccio,ST,AMF,LW,CM,RW
+Troyes,CM,LW,RW,DMF,Medical Staff
+Angers,DMF,CM,LW,RW,CB
+Manchester City,Medical Staff,Coach,GK,DMF,CM
+Arsenal,Coach,GK,Medical Staff,CM,DMF
+Manchester United,Coach,CM,ST,GK,AMF
+Newcastle United,GK,CM,Coach,AMF,DMF
+Liverpool,GK,Coach,CM,DMF,Medical Staff
+Brighton,Coach,Medical Staff,GK,CM,DMF
+Aston Villa,ST,AMF,CM,Coach,GK
+Tottenham Hotspur,Coach,CM,GK,AMF,DMF
+Brentford,Medical Staff,CM,GK,AMF,ST
+Fulham,CM,AMF,GK,ST,Coach
+Crystal Palace,ST,AMF,CM,GK,RW
+Chelsea,ST,AMF,GK,Coach,CM
+Wolverhampton,ST,AMF,CM,RW,LW
+West Ham United,ST,AMF,CM,GK,RW
+Bournemouth,ST,AMF,CM,LW,RW
+Nottingham Forest,AMF,ST,CM,LW,RW
+Everton,AMF,ST,CM,LW,RW
+Leicester City,LW,CM,RW,AMF,ST
+Leeds United,AMF,CM,ST,LW,RW
+Southampton,AMF,LW,ST,RW,CM
+Torino,Medical Staff,GK,Coach,CM,DMF
+Lazio,Coach,Medical Staff,GK,ST,CM
+Inter Milan,Coach,GK,CM,Medical Staff,DMF
+AC Milan,GK,Coach,CM,Medical Staff,ST
+Atalanta,Medical Staff,GK,Coach,CM,AMF
+AS Roma,ST,Medical Staff,GK,AMF,Coach
+Juventus,GK,Coach,ST,AMF,CM
+Fiorentina,GK,ST,AMF,Medical Staff,CM
+Bologna,GK,AMF,ST,Medical Staff,CM
+Torino,ST,AMF,GK,Medical Staff,CM
+Monza,Medical Staff,AMF,ST,CM,GK
+Udinese,AMF,ST,Medical Staff,CM,GK
+Sassuolo,ST,AMF,CM,GK,Coach
+Empoli,ST,AMF,Medical Staff,CM,GK
+Salernitana,Medical Staff,AMF,CM,RW,ST
+Lecce,ST,AMF,Medical Staff,LW,RW
+Spezia,ST,AMF,Medical Staff,LW,RW
+Hellas Verona,Medical Staff,ST,AMF,LW,RW
+Cremonese,Medical Staff,LW,CB,RW,AMF
+Sampdoria,Medical Staff,ST,AMF,CB,RB
